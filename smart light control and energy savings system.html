@@ -486,24 +486,39 @@ float readCurrent() {
     </div>
   </section>
 
+
   <!-- IoT Dashboard -->
   <section id="iot" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">IoT Dashboard & Monitoring</h2>
-      
-      <div class="max-w-5xl mx-auto">
-        <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-3xl shadow-xl mb-12">
-          <p class="text-lg text-gray-700 leading-relaxed text-center">
-            The system leverages <strong>MQTT protocol</strong> to communicate with <strong>Ubidots</strong>, enabling real-time monitoring, data visualization, and remote control capabilities. Users can track energy consumption, view system status, and manually override automation from anywhere in the world.
-          </p>
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">IoT Dashboard & Monitoring</h2>
+
+    <div class="max-w-5xl mx-auto">
+      <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-3xl shadow-xl mb-12">
+        <p class="text-lg text-gray-700 leading-relaxed text-center">
+          The system leverages **MQTT protocol** to communicate with **Ubidots**, enabling real-time monitoring, data visualization, and remote control capabilities. Users can track energy consumption, view system status, and manually override automation from anywhere in the world.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code Compilation Demonstration</h3>
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+          <video width="100%" height="auto" controls class="w-full">
+            <source src="C:\Users\dx\Downloads/compile.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-
-        <div class="bg-gray-50 py-10 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Remote Monitoring – Feature Breakdown</h2>
-
-    
-
+      </div>
+      <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code uploading Demonstration</h3>
+        <div class="bg-gray-100 rounded-lg overflow-hidden">
+          <video width="100%" height="auto" controls class="w-full">
+            <source src="C:\Users\dx\Downloads/upload.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="bg-gray-50 py-10 px-4 sm:px-6 lg:px-8 rounded-3xl">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Remote Monitoring – Feature Breakdown</h3>
       <!-- Real-time Monitoring -->
       <div class="bg-white rounded-3xl shadow-lg p-6 border-2 border-purple-100">
         <h3 class="text-xl font-bold mb-4 text-center text-gray-800">Element of Ubidots Dashboard</h3>
@@ -532,6 +547,7 @@ float readCurrent() {
           </div>
         </div>
       </div>
+
 
       <!-- Cloud Features -->
       <div class="bg-white rounded-3xl shadow-lg p-6 border-2 border-blue-100">
