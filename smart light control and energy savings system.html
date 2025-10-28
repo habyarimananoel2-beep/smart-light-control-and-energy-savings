@@ -164,17 +164,14 @@
     }
   </style>
 </head>
-<body>
+<body class="text-gray-800">
 
   <!-- Hero Section -->
   <section id="home" class="hero-section text-white py-20 relative">
     <div class="container mx-auto px-6 text-center relative z-10">
       <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Smart Light Control & Energy Savings</h1>
       <p class="text-xl md:text-2xl mb-8 opacity-90 slide-in">Building the Invisible Future with Embedded Systems & IoT</p>
-      <div class="flex justify-center gap-4 mt-8">
-        <a href="#components" class="px-8 py-4 bg-white text-purple-600 rounded-full font-bold hover:bg-opacity-90 transition-all">Explore System</a>
-        <a href="#iot" class="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-purple-600 transition-all">View Dashboard</a>
-      </div>
+      
     </div>
   </section>
 
@@ -185,10 +182,10 @@
         <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Project introduction</h2>
         <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 shadow-xl">
           <p class="text-lg text-gray-700 leading-relaxed mb-6">
-            This project is a <span class="font-bold text-purple-600">smart energy-saving lighting system</span> built using an ESP32 microcontroller, integrating motion detection, ambient light sensing, and current monitoring to automate and optimize bulb usage.
+            This project is a <span class="font-bold text-purple-600">smart energy-saving lighting system</span> built using a  microcontroller, integrating motion detection, ambient light sensing, and current monitoring to automate and optimize bulb usage.
           </p>
           <p class="text-lg text-gray-700 leading-relaxed">
-            It connects to Wi-Fi and communicates with Ubidots to publish real-time data such as light status, current consumption, and energy saved, while also allowing remote manual control through a subscribed feed. The system uses a PIR sensor to detect motion, an LDR to measure ambient light, and an ACS712 sensor to monitor current flow.
+            It connects to Wi-Fi and communicates with Ubidots to publish real-time data such as light status, current consumption, and energy saved, while also allowing remote manual control .The system uses a motion sensor to detect motion, an LDR to measure ambient light, and an current sensor to monitor current flow.
           </p>
         </div>
         
@@ -199,95 +196,10 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Components Gallery -->
-  <section id="components" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">System Components</h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        <!-- ESP32 -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">ESP32 Microcontroller</h3>
-          <p class="text-gray-600 text-center mb-4">Powerful microcontroller with built-in Wi-Fi and Bluetooth for IoT automation</p>
-          <img src="C:\Users\dx\Pictures/esp.jpg" alt="ESP32" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <!-- PIR Sensor -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">PIR Motion Sensor</h3>
-          <p class="text-gray-600 text-center mb-4">Detects motion by sensing infrared radiation for occupancy-based control</p>
-          <img src="C:\Users\dx\Pictures/pir-motion-sensor1.jpg" alt="PIR" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <!-- LDR -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">LDR Light Sensor</h3>
-          <p class="text-gray-600 text-center mb-4">Measures ambient light levels for intelligent lighting decisions</p>
-          <img src="C:\Users\dx\Pictures/ldr.jpg" alt="LDR" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <!-- Current Sensor -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">ACS712 Current Sensor</h3>
-          <p class="text-gray-600 text-center mb-4">Monitors current flow to track energy consumption</p>
-          <img src="C:\Users\dx\Pictures/current sensor.jpg" alt="ACS712" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <!-- Relay Module -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Relay Module</h3>
-          <p class="text-gray-600 text-center mb-4">Safely controls high-voltage devices like lamps</p>
-          <img src="C:\Users\dx\Pictures/relay.jpg" alt="Relay" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <!-- Smart Bulb -->
-        <div class="feature-card card-hover">
-          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Smart Lighting</h3>
-          <p class="text-gray-600 text-center mb-4">Energy-efficient LED bulbs controlled by the system</p>
-          <img src="C:\Users\dx\Pictures/lamp.jpg" alt="Bulb" class="w-full h-48 object-contain rounded-lg">
-        </div>
-
-        <div class="feature-card card-hover">
-  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Transistor</h3>
-  <p class="text-gray-600 text-center mb-4">Used as an electronic switch or amplifier for lighting control</p>
-  <img src="C:\Users\dx\Pictures/npn transistor.jpg" alt="Transistor" class="w-full h-48 object-contain rounded-lg">
-</div>
-
-<div class="feature-card card-hover">
-  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Resistor</h3>
-  <p class="text-gray-600 text-center mb-4">Controls current flow and protects components in the circuit</p>
-  <img src="C:\Users\dx\Pictures/resistor.jpg" alt="Resistor" class="w-full h-48 object-contain rounded-lg">
-</div>
-
-<div class="feature-card card-hover">
-  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Flyback Diode</h3>
-  <p class="text-gray-600 text-center mb-4">Protects circuits from voltage spikes when switching inductive loads like relays or motors</p>
-  <img src="C:\Users\dx\Pictures\diode1.jpg" alt="Flyback Diode" class="w-full h-48 object-contain rounded-lg">
-</div>
-
-<div class="feature-card card-hover">
-  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">LED Indicators</h3>
-  <p class="text-gray-600 text-center mb-4">Display the operating status of the system through visual light signals</p>
-  <img src="C:\Users\dx\Pictures\led indicator.jpg" alt="LED Indicators" class="w-full h-48 object-contain rounded-lg">
-</div>
-
-<div class="feature-card card-hover">
-  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Electrical Cable</h3>
- <p class="text-gray-600 text-center mb-4">Carries electrical power or signals between components in the circuit</p>
-  <img src="C:\Users\dx\Pictures\cables.jpg" alt="Electrical Cable" class="w-full h-48 object-contain rounded-lg">
-</div>
-
-
-
-      </div>
-    </div>
-  </section>
-
+ 
   <!-- Working Principle -->
-  <section id="working" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
+  <section id="working" class="py-20 bg-white text-gray-800">
+    <div class="container mx-auto px-6 ">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Working Principle and techinical explaination</h2>
         <div class="bg-white rounded-xl shadow-lg p-6 my-10">
@@ -295,8 +207,28 @@
   <p class="text-gray-700 mb-6 text-center">
     This block diagram illustrates the architecture of a smart lighting system powered by an ESP32 microcontroller. It integrates a Light Dependent Resistor (LDR), motion sensor, and current sensor to automate lighting and track energy usage. Each of the four lamps (9W) is controlled via a switching module, enabling efficient energy management based on real-time environmental inputs.
   </p>
-  <img src="C:\Users\dx\Pictures/block diagram_page-0001.jpg" alt="Smart Light Block Diagram" class="w-full h-auto object-contain rounded-lg border border-gray-300">
+  <img src="https://i.imgur.com/egJrQab.jpeg" alt="Smart Light Block Diagram" class="w-full h-auto object-contain rounded-lg border border-gray-300">
+
+    
+    
+
+      <p class="mt-4"><strong>✓ Light-dependent resistor (LDR)</strong>: This is a sensor that can tell how bright or dark it is in a room. Think of it like your eyes noticing when it’s getting dark.</p>
+
+      <p><strong>✓ Motion sensor</strong>: This sensor detects when someone moves in a room, like noticing if a person walks by.</p>
+
+      <p><strong>✓ Current sensor</strong>: This sensor keeps track of how much electricity is being used, like checking the electricity meter at home.</p>
+
+      <p><strong>✓ ESP32 microcontroller</strong>: This is the “brain” of the system. It looks at the information from the sensors and decides what to do, like turning lights on or off.</p>
+
+      <p><strong>✓ Power supply</strong>: This gives electricity to the brain (microcontroller) and the sensors so they can work, like plugging your devices into a wall socket.</p>
+
+      <p><strong>✓ Switching mode</strong>: This is like a small helper that actually turns each light on or off when the brain tells it to.</p>
+
+      <p><strong>✓ Lamps (lamp1, lamp2, lamp3, lamp4)</strong>: These are the lights that will turn on or off depending on the information from the sensors and instructions from the brain.</p>
+    
+  
 </div>
+
 
        
         
@@ -305,7 +237,8 @@
     <h1 class="text-4xl font-bold text-gray-800 mb-6">
       Smart Light Control Circuit Diagram
     </h1>
-    <div class="text-left text-gray-700 space-y-4">
+    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 shadow-xl">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
       <p>
         This smart light control circuit is designed to automate lighting based on motion and ambient light conditions. It uses an ESP32 microcontroller to process sensor inputs and control relays that switch 12V lamps on or off.
       </p>
@@ -324,7 +257,7 @@
     </div>
     <div class="rounded-lg shadow-lg overflow-hidden bg-white p-4 mb-6">
       <img
-        src="C:/Users/dx/Pictures/smart light control and energy savings_page-0001.jpg"
+        src="https://i.imgur.com/zwYzBYL.jpeg"
         alt="Smart Light Control Circuit"
         class="w-full h-auto object-contain"
       />
@@ -370,10 +303,99 @@
 
   </section>
 
-  <!-- Implementation -->
+   
+
+   
+
+   
+  <!-- Components Gallery -->
+  <section id="components" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-3xl font-bold text-center mb-16 text-gray-800">System Components</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- ESP32 -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">ESP32 Microcontroller</h3>
+          <p class="text-gray-600 text-center mb-4">Powerful microcontroller with built-in Wi-Fi and Bluetooth for IoT automation</p>
+          <img src="https://i.imgur.com/Ybtom09.jpeg" alt="ESP32" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <!-- PIR Sensor -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">PIR Motion Sensor</h3>
+          <p class="text-gray-600 text-center mb-4">Detects motion by sensing infrared radiation for occupancy-based control</p>
+          <img src="https://i.imgur.com/oMMOnu3.jpeg" alt="PIR" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <!-- LDR -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">LDR Light Sensor</h3>
+          <p class="text-gray-600 text-center mb-4">Measures ambient light levels for intelligent lighting decisions</p>
+          <img src="https://i.imgur.com/249LsaQ.jpeg" alt="LDR" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <!-- Current Sensor -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">ACS712 Current Sensor</h3>
+          <p class="text-gray-600 text-center mb-4">Monitors current flow to track energy consumption</p>
+          <img src="https://i.imgur.com/jKpNfrf.jpeg" alt="ACS712" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <!-- Relay Module -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Relay Module</h3>
+          <p class="text-gray-600 text-center mb-4">Safely controls high-voltage devices like lamps</p>
+          <img src="https://i.imgur.com/IL4kf3f.jpeg" alt="Relay" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <!-- Smart Bulb -->
+        <div class="feature-card card-hover">
+          <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Smart Lighting</h3>
+          <p class="text-gray-600 text-center mb-4">Energy-efficient LED bulbs controlled by the system</p>
+          <img src="https://i.imgur.com/MezVINe.jpeg" alt="Bulb" class="w-full h-48 object-contain rounded-lg">
+        </div>
+
+        <div class="feature-card card-hover">
+  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Transistor</h3>
+  <p class="text-gray-600 text-center mb-4">Used as an electronic switch or amplifier for lighting control</p>
+  <img src="https://i.imgur.com/0YvGMOS.jpeg" alt="Transistor" class="w-full h-48 object-contain rounded-lg">
+</div>
+
+<div class="feature-card card-hover">
+  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Resistor</h3>
+  <p class="text-gray-600 text-center mb-4">Controls current flow and protects components in the circuit</p>
+  <img src="https://i.imgur.com/6L37IBY.jpeg" alt="Resistor" class="w-full h-48 object-contain rounded-lg">
+</div>
+
+<div class="feature-card card-hover">
+  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Flyback Diode</h3>
+  <p class="text-gray-600 text-center mb-4">Protects circuits from voltage spikes when switching inductive loads like relays or motors</p>
+  <img src="https://i.imgur.com/5E8e48X.jpeg" alt="Flyback Diode" class="w-full h-48 object-contain rounded-lg">
+</div>
+
+<div class="feature-card card-hover">
+  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">LED Indicators</h3>
+  <p class="text-gray-600 text-center mb-4">Display the operating status of the system through visual light signals</p>
+  <img src="https://i.imgur.com/RVAcMvl.jpeg" alt="LED Indicators" class="w-full h-48 object-contain rounded-lg">
+</div>
+
+<div class="feature-card card-hover">
+  <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Electrical Cable</h3>
+ <p class="text-gray-600 text-center mb-4">Carries electrical power or signals between components in the circuit</p>
+  <img src="https://i.imgur.com/7FnFESC.jpg" alt="Electrical Cable" class="w-full h-48 object-contain rounded-lg">
+</div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Implementation -->
   <section id="implementation" class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Code Implementation</h2>
+      <h2 class="text-3xl md:text-3xl font-bold text-center mb-12 text-gray-800">Code Implementation</h2>
       
       <div class="max-w-5xl mx-auto space-y-8">
         <!-- Global Declarations -->
@@ -381,13 +403,6 @@
           <h3 class="text-2xl font-bold mb-4 text-purple-600">1. Global Declarations & Libraries</h3>
           <pre><code>#include &lt;WiFi.h&gt;
 #include &lt;UbidotsEsp32Mqtt.h&gt;
-
-#define WIFI_SSID       "DESKTOP-JKNH2PT4993"
-#define WIFI_PASSWORD   "3D045@7s"
-
-#define UBIDOTS_TOKEN   "BBUS-H7akBGyO4ziOtg7Yc7yCdH7JDReNBi"
-#define DEVICE_LABEL    "smart_light"
-
 #define PIRPIN             27
 #define LDRPIN             34
 #define CURRENTSENSORPIN   35
@@ -484,6 +499,31 @@ float readCurrent() {
         </div>
       </div>
     </div>
+
+    <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code Compilation Demonstration</h3>
+        <p>this video shows how we compile our arduino code in purpose of code testing and debugging.</p>
+          <div class="bg-card-accent rounded-xl overflow-hidden">
+          <iframe src="https://drive.google.com/file/d/1OA-wY-yjeu9_0iZYFMFssdMeYg6NKvl7/preview?usp=sharing" 
+                  width="100%" 
+                  height="400" 
+                  frameborder="0"
+                  class="w-full">
+          </iframe>
+        </div>
+      </div>
+      <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code uploading Demonstration</h3>
+        <p>while this shows program uploading in microcontroller in order to integrate microcontroller in prototype to test if our project is functioning as intended. </p>
+        <div class="bg-card-accent rounded-xl overflow-hidden">
+          <iframe src="https://drive.google.com/file/d/1NbtE8x_0tH0C-19CA-kyGLW647JDorp-/preview?usp=sharing" 
+                  width="100%" 
+                  height="400" 
+                  frameborder="0"
+                  class="w-full">
+          </iframe>
+        </div>
+      </div>
   </section>
 
 
@@ -495,28 +535,11 @@ float readCurrent() {
     <div class="max-w-5xl mx-auto">
       <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-3xl shadow-xl mb-12">
         <p class="text-lg text-gray-700 leading-relaxed text-center">
-          The system leverages **MQTT protocol** to communicate with **Ubidots**, enabling real-time monitoring, data visualization, and remote control capabilities. Users can track energy consumption, view system status, and manually override automation from anywhere in the world.
+          The system leverages MQTT protocol to communicate with Ubidots, enabling real-time monitoring, data visualization, and remote control capabilities. Users can track energy consumption, view system status, and manually override automation from anywhere in the world.
         </p>
       </div>
 
-      <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
-        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code Compilation Demonstration</h3>
-        <div class="bg-gray-100 rounded-lg overflow-hidden">
-          <video width="100%" height="auto" controls class="w-full">
-            <source src="C:\Users\dx\Downloads/compile.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-      <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
-        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Code uploading Demonstration</h3>
-        <div class="bg-gray-100 rounded-lg overflow-hidden">
-          <video width="100%" height="auto" controls class="w-full">
-            <source src="C:\Users\dx\Downloads/upload.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
+      
       <div class="bg-gray-50 py-10 px-4 sm:px-6 lg:px-8 rounded-3xl">
         <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Remote Monitoring – Feature Breakdown</h3>
       <!-- Real-time Monitoring -->
@@ -525,33 +548,96 @@ float readCurrent() {
         <div class="space-y-6 text-gray-700">
           <div>
             <p><strong>✓ Light Status (ON/OFF):</strong> Displays the current state of each connected lamp. Helps users know which lights are active at any moment.</p>
-            <img src="C:/Users/dx/Pictures/lamp status.png" alt="Light Status" class="w-full h-48 object-contain rounded-lg mt-2">
+            <img src="https://i.imgur.com/SrOrjNn.png" alt="Light Status" class="w-full h-48 object-contain rounded-lg mt-2">
           </div>
           <div>
             <p><strong>✓ Current Consumption:</strong> Shows real-time electrical current usage for each lamp. Useful for tracking power draw and identifying high-consumption devices.</p>
-            <img src="C:/Users/dx/Pictures/current consumed.png" alt="Current Consumption" class="w-full h-48 object-contain rounded-lg mt-2">
+            <img src="https://i.imgur.com/LSx3OU6.png" alt="Current Consumption" class="w-full h-48 object-contain rounded-lg mt-2">
           </div>
           <div>
-  <p><strong>✓ Motion Detection:</strong> Uses a PIR sensor to detect movement in the monitored area. When motion is detected, the system activates the corresponding light automatically, enhancing security and convenience.</p>
-  <img src="C:/Users/dx/Pictures/motion.png" alt="Motion Detection" class="w-full h-48 object-contain rounded-lg mt-2">
+  <p><strong>✓ Motion Detection:</strong> Uses a PIR sensor to detect movement in the monitored area. When motion is detected, the system activates the corresponding light automatically,and user know that the person present to enhancing security and convenience.</p>
+  <img src="https://i.imgur.com/O2qw6X8.png" alt="Motion Detection" class="w-full h-48 object-contain rounded-lg mt-2">
 </div>
 
 <div>
-  <p><strong>✓ Light Detection:</strong> Utilizes an LDR (Light Dependent Resistor) to measure ambient light levels. When the surrounding light falls below a certain threshold, the system automatically turns on the lights to maintain visibility and comfort.</p>
-  <img src="C:/Users/dx/Pictures/lightvalue.png" alt="Light Detection" class="w-full h-48 object-contain rounded-lg mt-2">
+  <p><strong>✓ Light Detection:</strong> Utilizes an LDR (Light Dependent Resistor) to measure ambient light levels. When the surrounding light falls below a certain threshold, the system automatically turns on the lights to maintain visibility and comfort,also display light value in the following gauge.</p>
+  <img src="https://i.imgur.com/vHkEenK.png" alt="Light Detection" class="w-full h-48 object-contain rounded-lg mt-2">
 </div>
 
           <div>
-            <p><strong>✓ Manual Control Switches:</strong> Allows users to override automation and manually toggle lights on or off from the dashboard interface.</p>
-            <img src="C:/Users/dx/Pictures/manual switch.png" alt="Manual Switch" class="w-full h-48 object-contain rounded-lg mt-2">
+            <p><strong>✓ Manual Control Switches:</strong> Allows users to override automation and manually toggle lights on or off from the dashboard interface as he/she wish when no motion detected.</p>
+            <img src="https://i.imgur.com/A1VY8ke.png" alt="Manual Switch" class="w-full h-48 object-contain rounded-lg mt-2">
           </div>
         </div>
       </div>
+<div class="bg-gray-50 py-10 px-4 sm:px-6 lg:px-8 rounded-3xl mt-12">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+    Smart Light Control and Energy Savings Dashboard
+      </h1>
+      <img src="https://i.imgur.com/yEOTIMI.png" alt="Smart Light Control and Energy Savings Dashboard" class="w-full h-auto object-contain rounded-lg border border-gray-300">
+
+
+  <main class="max-w-4xl mx-auto p-6 space-y-6 text-gray-800 leading-relaxed">
+
+    <p>The dashboard monitors and controls multiple lamps remotely.</p>
+
+    <p>It uses gauges and switch widgets to display sensor data and lamp statuses.</p>
+
+    <h2 class="text-xl font-semibold mt-6">Lamp Controls</h2>
+
+    <p>There are three lamps shown:</p>
+    <ul class="list-disc list-inside ml-4">
+      <li>Lamp1, Lamp2, and Lamp3 each have:</li>
+      <li>A status indicator (showing “Off”).</li>
+      <li>A manual switch button that allows turning the lamp on or off manually.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6"> Sensor Data</h2>
+
+    <p><strong>Lightvalue</strong> (purple gauge on the right):</p>
+    <ul class="list-disc list-inside ml-4">
+      <li>Indicates the brightness level detected by the LDR sensor.</li>
+      <li>Current reading: 1,340.00, suggesting a high light level.</li>
+    </ul>
+
+    <p><strong>Motion sensor</strong> (bottom left):</p>
+    <ul class="list-disc list-inside ml-4">
+      <li>Detects if there is any movement.</li>
+      <li>Currently shows Off, meaning no motion detected.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6"> Energy and Device Data</h2>
+
+    <p>The top gauges show the status or current consumption for each lamp (all Off, meaning no current draw).</p>
+
+    <p>The sidebar (left) lists Ubidots sections like Devices, Data, Apps, and Dev Center — typical for IoT project management.</p>
+
+    <h2 class="text-xl font-semibold mt-6"> Summary</h2>
+
+    <p>This dashboard helps monitor and control lamps automatically or manually:</p>
+
+    <ul class="list-disc list-inside ml-4">
+      <li>Sensors (LDR + motion) detect brightness and movement.</li>
+      <li>Lamps turn on or off accordingly.</li>
+      <li>The user can also override automation using manual switches.</li>
+      <li>Data visualization makes it easy to track light levels, lamp status, and energy usage in real time.</li>
+    </ul>
+
+  </main>
+  <div class="bg-card-accent rounded-xl overflow-hidden">
+          <iframe src="https://drive.google.com/file/d/1G-b8wKG_l0Cg5JPPrGXcdJvr4QQTzI6b/preview?usp=sharing" 
+                  width="100%" 
+                  height="400" 
+                  frameborder="0"
+                  class="w-full">
+          </iframe>
+        </div>
+</div>
 
 
       <!-- Cloud Features -->
       <div class="bg-white rounded-3xl shadow-lg p-6 border-2 border-blue-100">
-        <h3 class="text-xl font-bold mb-4 text-center text-gray-800"> Cloud Features</h3>
+        <h3 class="text-xl font-bold mb-4 text-center text-gray-800"> future plan in remote monitoring</h3>
         <ul class="space-y-4 text-gray-700">
           <li><strong>Remote Manual Override:</strong> Enables users to control lighting from anywhere using a cloud-connected interface—ideal for travel or remote access.</li>
           <li><strong>Historical Data Analytics:</strong> Provides insights into usage patterns over time, helping optimize energy consumption and predict future needs.</li>
@@ -571,8 +657,8 @@ float readCurrent() {
           </div>
         </div>
 
-        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-3xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">System Features</h3>
+        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-3xl shadow-lg mt-6">
+          <h3 class="text-2xl font-bold mb-6 text-gray-800 text-center">system Features</h3>
           <div class="grid md:grid-cols-2 gap-4">
             <div class="flex items-center gap-3 bg-white p-4 rounded-xl">
               <span class="text-2xl">✓</span>
