@@ -640,7 +640,43 @@ void callback(char *topic, byte *payload, unsigned int length) {
   ubidots.loop();
   delay(3000);
 }</code></pre>
+
+
 </div>
+<button type="button" id="download" 
+        class="bg-blue-600 text-white text-center font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-blue-700 transition duration-300">
+  Download Code
+</button>
+
+<script>
+const button = document.getElementById('download');
+
+button.addEventListener('click', async () => {
+  const url = 'https://raw.githubusercontent.com/habyarimananoel2-beep/smart-light-control-and-energy-savings/main/smart_light_control_and_energysavings.ino';
+
+  try {
+    // Fetch the file from GitHub
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Network response was not ok');
+
+    // Convert the response to a Blob
+    const blob = await response.blob();
+
+    // Create a temporary link to trigger download
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = 'smart_light_control_and_energysavings.ino';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Release memory
+    window.URL.revokeObjectURL(link.href);
+  } catch (err) {
+    alert('Failed to download file: ' + err.message);
+  }
+});
+</script>
 
 
       <div class="max-w-4xl mx-auto my-10 bg-white rounded-xl shadow-lg p-8">
